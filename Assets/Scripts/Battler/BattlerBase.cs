@@ -5,7 +5,8 @@ using Sirenix.OdinInspector;
 
 public class BattlerBase : SerializedMonoBehaviour, ICollideTarget
 {
-    public Transform FirePosition;
+    public Dictionary<string, FirePosition> FirePositionTable = new Dictionary<string, FirePosition>();
+    public Transform HitCenter;
 
     public bool IsMovable
     {
@@ -21,6 +22,30 @@ public class BattlerBase : SerializedMonoBehaviour, ICollideTarget
         {
             return true;
         }
+    }
+
+    public Vector3 CurrentPos
+    {
+        get
+        {
+            return HitCenter.position;
+        }
+    }
+
+    public Vector3 GetFirePosition(string id)
+    {
+        if (FirePositionTable.ContainsKey(id))
+        {
+            return FirePositionTable[id].transform.position;
+        }
+
+        Debug.LogError("不存在的 FirePosition ["+id+"]");
+        return Vector3.zero;
+    }
+
+    public Vector3 GetFirePositionOffset(string id)
+    {
+        return CurrentPos - GetFirePosition(id);
     }
 
     public virtual void Fire()

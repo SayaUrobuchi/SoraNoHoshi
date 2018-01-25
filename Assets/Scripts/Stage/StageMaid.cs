@@ -13,12 +13,19 @@ public class StageMaid : MonoBehaviour
         }
     }
 
-    public float DeltaTime
+    public static float DeltaTime
     {
         get
         {
             return Mathf.Min(.05f, Time.deltaTime);
         }
+    }
+
+    private List<ShotMiko> shots = new List<ShotMiko>();
+
+    public void RegisterShotMiko(ShotMiko miko)
+    {
+        shots.Add(miko);
     }
 
     private void Awake()
@@ -31,9 +38,26 @@ public class StageMaid : MonoBehaviour
     {
 		
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    private void FixedUpdate()
+    {
+        for (int i = 0; i < shots.Count; i++)
+        {
+            shots[i].UpdateShot();
+        }
+        int lim = 0;
+        for (int i = 0; i < shots.Count; i++)
+        {
+            if (!shots[i].IsFinished())
+            {
+                shots[lim++] = shots[i];
+            }
+        }
+        shots.TrimTo(lim);
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
 		
 	}

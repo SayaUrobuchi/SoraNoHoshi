@@ -7,9 +7,11 @@ public class PlayerBattler : BattlerBase
     public const float SPEED = 4f;
     public const float LOW_SPEED = 1.6f;
 
+    public ShotMaid MainShot = new ShotMaid();
+
 	// Use this for initialization
 	void Start () {
-		
+		MainShot.Owner = this;
 	}
 	
 	// Update is called once per frame
@@ -20,19 +22,19 @@ public class PlayerBattler : BattlerBase
             float speed = (Input.GetKey(KeyCode.LeftShift) ? LOW_SPEED : SPEED);
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                transform.Translate(Vector3.left * speed * StageMaid.Summon.DeltaTime);
+                transform.Translate(Vector3.left * speed * StageMaid.DeltaTime);
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                transform.Translate(Vector3.right * speed * StageMaid.Summon.DeltaTime);
+                transform.Translate(Vector3.right * speed * StageMaid.DeltaTime);
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
-                transform.Translate(Vector3.down * speed * StageMaid.Summon.DeltaTime);
+                transform.Translate(Vector3.down * speed * StageMaid.DeltaTime);
             }
             if (Input.GetKey(KeyCode.UpArrow))
             {
-                transform.Translate(Vector3.up * speed * StageMaid.Summon.DeltaTime);
+                transform.Translate(Vector3.up * speed * StageMaid.DeltaTime);
             }
         }
 
@@ -40,7 +42,11 @@ public class PlayerBattler : BattlerBase
         {
             if (Input.GetKey(KeyCode.Z))
             {
-                Fire();
+                MainShot.Trigger();
+            }
+            else
+            {
+                MainShot.Stop();
             }
         }
     }
