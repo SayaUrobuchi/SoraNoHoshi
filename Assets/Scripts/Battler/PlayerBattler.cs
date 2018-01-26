@@ -8,9 +8,16 @@ public class PlayerBattler : BattlerBase
     public const float LOW_SPEED = 1.6f;
 
     public ShotMaid MainShot = new ShotMaid();
+    public SpriteRenderer HitHintRef;
+
+    public bool NeedShowHitHint()
+    {
+        return IsMovable && Input.GetKey(KeyCode.LeftShift);
+    }
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		MainShot.Owner = this;
 	}
 	
@@ -48,6 +55,11 @@ public class PlayerBattler : BattlerBase
             {
                 MainShot.Stop();
             }
+        }
+
+        if (HitHintRef != null)
+        {
+            HitHintRef.enabled = NeedShowHitHint();
         }
     }
 }

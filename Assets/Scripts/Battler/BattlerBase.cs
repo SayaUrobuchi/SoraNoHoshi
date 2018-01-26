@@ -48,6 +48,10 @@ public class BattlerBase : SerializedMonoBehaviour, ICollideTarget
         return CurrentPos - GetFirePosition(id);
     }
 
+    public virtual void OnHit(Shot shot)
+    {
+    }
+
     public virtual void Fire()
     {
     }
@@ -65,6 +69,10 @@ public class BattlerBase : SerializedMonoBehaviour, ICollideTarget
     #region ICollideTarget
     public void OnCollideStart(CollideMaid a, CollideMaid b)
     {
+        if (b.Owner is Shot)
+        {
+            OnHit(b.Owner as Shot);
+        }
     }
 
     public void OnCollideEnd(CollideMaid a, CollideMaid b)

@@ -22,6 +22,11 @@ public class Shot : SerializedMonoBehaviour, ICollideTarget
         isFinished = true;
     }
 
+    public void OnHit(BattlerBase target)
+    {
+        MarkDestroy();
+    }
+
 	// Use this for initialization
 	void Start ()
     {
@@ -37,6 +42,10 @@ public class Shot : SerializedMonoBehaviour, ICollideTarget
     #region ICollideTarget
     public void OnCollideStart(CollideMaid a, CollideMaid b)
     {
+        if (b.Owner is BattlerBase)
+        {
+            OnHit(b.Owner as BattlerBase);
+        }
     }
 
     public void OnCollideEnd(CollideMaid a, CollideMaid b)

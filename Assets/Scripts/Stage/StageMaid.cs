@@ -21,11 +21,18 @@ public class StageMaid : MonoBehaviour
         }
     }
 
+    public EnemyBattler MainEnemy;
+
     private List<ShotMiko> shots = new List<ShotMiko>();
 
     public void RegisterShotMiko(ShotMiko miko)
     {
         shots.Add(miko);
+    }
+
+    public EnemyBattler GetMainEnemy()
+    {
+        return MainEnemy;
     }
 
     private void Awake()
