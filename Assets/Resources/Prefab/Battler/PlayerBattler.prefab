@@ -425,21 +425,9 @@ MonoBehaviour:
     - Name: ShotData
       Entry: 7
       Data: 2|LoopShotMiko, Assembly-CSharp
-    - Name: Index
-      Entry: 3
-      Data: 0
-    - Name: Parent
-      Entry: 6
-      Data: 
     - Name: MikoTemplate
       Entry: 7
       Data: 3|SingleShotMiko, Assembly-CSharp
-    - Name: Index
-      Entry: 3
-      Data: 0
-    - Name: Parent
-      Entry: 6
-      Data: 
     - Name: Plans
       Entry: 7
       Data: 4|System.Collections.Generic.List`1[[ShotLifeplan, Assembly-CSharp]],
@@ -455,22 +443,82 @@ MonoBehaviour:
       Data: 0
     - Name: Position
       Entry: 7
-      Data: 6|SelfFirePositionReference, Assembly-CSharp
+      Data: 6|AddPositionReference, Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 7|SelfFirePositionReference, Assembly-CSharp
     - Name: FirePosID
       Entry: 1
       Data: FireMain
     - Name: 
       Entry: 8
       Data: 
+    - Name: Right
+      Entry: 7
+      Data: 8|CustomVectorPositionReference, Assembly-CSharp
+    - Name: X
+      Entry: 7
+      Data: 9|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Y
+      Entry: 7
+      Data: 10|OperatorAdd`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 11|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 12|OperatorMul`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 13|TreeIndexValue, Assembly-CSharp
+    - Name: Level
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 14|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 7|LinearMoveShotLifeplan, Assembly-CSharp
+      Data: 15|LinearMoveShotLifeplan, Assembly-CSharp
     - Name: Angle
       Entry: 7
-      Data: 8|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+      Data: 16|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
     - Name: Value
       Entry: 4
       Data: 0
@@ -479,7 +527,7 @@ MonoBehaviour:
       Data: 
     - Name: Speed
       Entry: 7
-      Data: 9|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+      Data: 17|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
     - Name: Value
       Entry: 4
       Data: 12
@@ -488,7 +536,7 @@ MonoBehaviour:
       Data: 
     - Name: Lifetime
       Entry: 7
-      Data: 10|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+      Data: 18|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
     - Name: Value
       Entry: 4
       Data: -1
@@ -509,7 +557,7 @@ MonoBehaviour:
       Data: 
     - Name: LoopCount
       Entry: 3
-      Data: 2
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
@@ -518,7 +566,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 11|CooldownShotAction, Assembly-CSharp
+      Data: 19|CooldownShotAction, Assembly-CSharp
     - Name: Time
       Entry: 4
       Data: 0.01
