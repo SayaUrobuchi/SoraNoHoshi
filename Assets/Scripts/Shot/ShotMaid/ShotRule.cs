@@ -12,6 +12,8 @@ public class ShotRule : SerializedMonoBehaviour
     private float timer = 0f;
     private ShotAction currentAction = null;
     private ShotMaid owner;
+    private Dictionary<string, Vector3> posTable = new Dictionary<string, Vector3>();
+    private Dictionary<string, float> valTable = new Dictionary<string, float>();
 
     public float Timer
     {
@@ -50,6 +52,36 @@ public class ShotRule : SerializedMonoBehaviour
     public void Reset()
     {
         actionIndex = 0;
+    }
+
+    public void SetPosition(string id, Vector3 pos)
+    {
+        posTable[id] = pos;
+    }
+
+    public Vector3 GetPosition(string id)
+    {
+        if (posTable.ContainsKey(id))
+        {
+            return posTable[id];
+        }
+        Debug.LogError("不存在的 ShotRule::PosTable[" + id + "]");
+        return Vector3.zero;
+    }
+
+    public void SetValue(string id, float pos)
+    {
+        valTable[id] = pos;
+    }
+
+    public float GetValue(string id)
+    {
+        if (valTable.ContainsKey(id))
+        {
+            return valTable[id];
+        }
+        Debug.LogError("不存在的 ShotRule::ValTable[" + id + "]");
+        return 0f;
     }
 
     private void FixedUpdate()

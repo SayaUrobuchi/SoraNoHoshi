@@ -21,6 +21,14 @@ public class StageMaid : MonoBehaviour
         }
     }
 
+    public static float NextRand
+    {
+        get
+        {
+            return Random.value;
+        }
+    }
+
     public EnemyBattler MainEnemy;
 
     private List<ShotMiko> shots = new List<ShotMiko>();
@@ -28,6 +36,17 @@ public class StageMaid : MonoBehaviour
     public void RegisterShotMiko(ShotMiko miko)
     {
         shots.Add(miko);
+    }
+
+    public void ClearAllShot(int mask = 0)
+    {
+        for (int i = 0; i < shots.Count; i++)
+        {
+            if (shots[i].Battler is EnemyBattler)
+            {
+                shots[i].DestroyShot();
+            }
+        }
     }
 
     public EnemyBattler GetMainEnemy()

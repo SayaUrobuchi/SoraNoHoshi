@@ -14,6 +14,15 @@ public abstract class ShotMiko : IHasMama<ShotMiko>
     protected ShotRule owner;
     protected Shot shot;
     protected Dictionary<string, Vector3> posTable = new Dictionary<string, Vector3>();
+    private Dictionary<string, float> valTable = new Dictionary<string, float>();
+
+    public ShotRule Owner
+    {
+        get
+        {
+            return owner;
+        }
+    }
 
     public BattlerBase Battler
     {
@@ -31,11 +40,42 @@ public abstract class ShotMiko : IHasMama<ShotMiko>
         }
     }
 
+    public void SetPosition(string id, Vector3 pos)
+    {
+        posTable[id] = pos;
+    }
+
+    public Vector3 GetPosition(string id)
+    {
+        if (posTable.ContainsKey(id))
+        {
+            return posTable[id];
+        }
+        Debug.LogError("不存在的 ShotMiko.posTable["+id+"]");
+        return Vector3.zero;
+    }
+
+    public void SetValue(string id, float pos)
+    {
+        valTable[id] = pos;
+    }
+
+    public float GetValue(string id)
+    {
+        if (valTable.ContainsKey(id))
+        {
+            return valTable[id];
+        }
+        Debug.LogError("不存在的 ShotMiko::ValTable[" + id + "]");
+        return 0f;
+    }
+
     public void GenerateShot(ShotRule ruler)
     {
         owner = ruler;
         posTable = new Dictionary<string, Vector3>();
         posTable[GENERATE_POS] = ruler.Battler.CurrentPos;
+        valTable = new Dictionary<string, float>();
         RegisterToStage();
         RealGenerateShot(ruler);
     }
@@ -43,6 +83,14 @@ public abstract class ShotMiko : IHasMama<ShotMiko>
     public void ShotBorn(Shot newShot)
     {
         shot = newShot;
+    }
+
+    public void DestroyShot()
+    {
+        if (shot != null)
+        {
+            shot.MarkDestroy();
+        }
     }
 
     protected void RegisterToStage()

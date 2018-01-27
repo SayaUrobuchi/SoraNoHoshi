@@ -444,7 +444,7 @@ MonoBehaviour:
       Data: 0
     - Name: Position
       Entry: 7
-      Data: 6|AddPositionReference, Assembly-CSharp
+      Data: 6|AddPositionReference`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
     - Name: Left
       Entry: 7
       Data: 7|SelfFirePositionReference, Assembly-CSharp
@@ -456,7 +456,7 @@ MonoBehaviour:
       Data: 
     - Name: Right
       Entry: 7
-      Data: 8|CustomVectorPositionReference, Assembly-CSharp
+      Data: 8|CustomVectorPositionReference`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
     - Name: X
       Entry: 7
       Data: 9|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp

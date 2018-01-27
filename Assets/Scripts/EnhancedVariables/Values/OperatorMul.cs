@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class OperatorMul<T> : IOperator<T>
 {
-    public IValue<T> Left;
-    public IValue<T> Right;
+    public IValue<T> Left = new ConstValue<T>(0);
+    public IValue<T> Right = new ConstValue<T>(0);
 
     public float Eva(T t)
     {
@@ -14,6 +14,6 @@ public class OperatorMul<T> : IOperator<T>
 
     public string Desc()
     {
-        return OperatorGoddess.OpInori2("({0} * {1})", Left, Right);
+        return SelfDescriptGoddess.Inori2("({0} * {1})", Left, Right);
     }
 }

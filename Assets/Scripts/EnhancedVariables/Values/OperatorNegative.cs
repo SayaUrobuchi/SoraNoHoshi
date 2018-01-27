@@ -13,6 +13,6 @@ public class OperatorNegative<T> : IOperator<T>
 
     public string Desc()
     {
-        return OperatorGoddess.OpInori1("(-{0})", Value);
+        return SelfDescriptGoddess.Inori1("(-{0})", Value);
     }
 }

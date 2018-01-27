@@ -8,7 +8,8 @@ public class BornShotLifeplan : ShotLifeplan
 {
     [AssetsOnly]
     public Shot SpawnTarget;
-    public PositionReference Position;
+    [SelfDesc]
+    public IPositionReference<ShotMiko> Position;
 
     public override bool IsFinished(ShotMiko mikosama)
     {
@@ -18,7 +19,7 @@ public class BornShotLifeplan : ShotLifeplan
     public override void Execute(ShotMiko mikosama)
     {
         Shot shot = GameObject.Instantiate(SpawnTarget);
-        shot.transform.position = Position.GetPos(mikosama);
+        shot.transform.position = Position.Eva(mikosama);
         mikosama.ShotBorn(shot);
     }
 }

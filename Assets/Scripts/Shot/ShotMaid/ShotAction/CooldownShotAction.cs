@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class CooldownShotAction : ShotAction
 {
-    public float Time = 1f;
+    public IValue<ShotRule> Time = new ConstValue<ShotRule>(1f);
 
     public override void Execute(ShotRule master)
     {
-        master.Timer = Time;
+        master.Timer = Time.Eva(master);
     }
 }

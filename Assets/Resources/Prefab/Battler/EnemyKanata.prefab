@@ -61,6 +61,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1316685939343904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4401512367985428}
+  - component: {fileID: 114760644769694646}
+  m_Layer: 11
+  m_Name: SpellMaid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1338665839672018
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,6 +88,88 @@ GameObject:
   - component: {fileID: 114377922432610898}
   m_Layer: 11
   m_Name: EnemyKanata
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1372312158760882
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4841056106875684}
+  - component: {fileID: 114541571007955632}
+  m_Layer: 11
+  m_Name: MainShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1456193306398134
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4391906449194020}
+  - component: {fileID: 114880313695040882}
+  m_Layer: 11
+  m_Name: MainShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1489897668631164
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4449489057098514}
+  - component: {fileID: 114331188499860838}
+  - component: {fileID: 114904936959066546}
+  m_Layer: 11
+  m_Name: Spell0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1698180942375408
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4083939322667068}
+  - component: {fileID: 114614009622002586}
+  - component: {fileID: 114221803434027550}
+  m_Layer: 11
+  m_Name: Spell1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1790202520529144
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4398048118442084}
+  - component: {fileID: 114706160585316306}
+  m_Layer: 11
+  m_Name: Movement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,6 +188,76 @@ Transform:
   m_Father: {fileID: 4897754977330108}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4083939322667068
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698180942375408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4841056106875684}
+  - {fileID: 4398048118442084}
+  m_Father: {fileID: 4401512367985428}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4391906449194020
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456193306398134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4449489057098514}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4398048118442084
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790202520529144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4083939322667068}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4401512367985428
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316685939343904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4449489057098514}
+  - {fileID: 4083939322667068}
+  m_Father: {fileID: 4971566152770202}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4449489057098514
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489897668631164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4391906449194020}
+  m_Father: {fileID: 4401512367985428}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4647108558976380
 Transform:
   m_ObjectHideFlags: 1
@@ -102,6 +270,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4897754977330108}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4841056106875684
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372312158760882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4083939322667068}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4897754977330108
 Transform:
@@ -125,10 +306,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1338665839672018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.77, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4897754977330108}
+  - {fileID: 4401512367985428}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -202,6 +384,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.31, y: 0.28}
   m_EdgeRadius: 0
+--- !u!114 &114221803434027550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698180942375408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a50c47ac51c5124ebdbd74b05c79aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Rules:
+  - {fileID: 114541571007955632}
+--- !u!114 &114331188499860838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489897668631164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fcc3874ee24078459af26000b917aeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  NameID: KanataSpell1
+  MaxHP: 256
+  ActionPattern: {fileID: 114904936959066546}
 --- !u!114 &114377922432610898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -242,8 +469,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  HitCenter: {fileID: 0}
+  HitCenter: {fileID: 4052907038419440}
   FakeMaxHP: 800
+  SpellMaid: {fileID: 114760644769694646}
 --- !u!114 &114481113375904684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -269,6 +497,672 @@ MonoBehaviour:
       Entry: 10
       Data: 0
   Tag: 0
+--- !u!114 &114541571007955632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372312158760882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c412b19ff9d9b4f4b9c1e96be69ee722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 114087155177070896, guid: abbdb5ffa2ba6a344a5483ab85ea924b, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Actions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[ShotAction, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|SetValueShotAction, Assembly-CSharp
+    - Name: ValueID
+      Entry: 1
+      Data: ST_ANG
+    - Name: Value
+      Entry: 7
+      Data: 2|RandomValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Min
+      Entry: 7
+      Data: 3|ConstValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 60
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Max
+      Entry: 7
+      Data: 4|ConstValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 120
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|GenerateShotAction, Assembly-CSharp
+    - Name: ShotData
+      Entry: 7
+      Data: 6|LoopShotMiko, Assembly-CSharp
+    - Name: MikoTemplate
+      Entry: 7
+      Data: 7|LoopShotMiko, Assembly-CSharp
+    - Name: MikoTemplate
+      Entry: 7
+      Data: 8|SingleShotMiko, Assembly-CSharp
+    - Name: Plans
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[ShotLifeplan, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 10|SetValueShotLifeplan, Assembly-CSharp
+    - Name: ID
+      Entry: 1
+      Data: ANG
+    - Name: Value
+      Entry: 7
+      Data: 11|OperatorAdd`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 12|SavedCommonValue, Assembly-CSharp
+    - Name: ID
+      Entry: 1
+      Data: ST_ANG
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 13|OperatorMul`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 14|TreeIndexValue, Assembly-CSharp
+    - Name: Level
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 15|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 16|BornShotLifeplan, Assembly-CSharp
+    - Name: SpawnTarget
+      Entry: 10
+      Data: 0
+    - Name: Position
+      Entry: 7
+      Data: 17|SelfPositionReference, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 18|LinearMoveShotLifeplan, Assembly-CSharp
+    - Name: Angle
+      Entry: 7
+      Data: 19|SavedValue, Assembly-CSharp
+    - Name: ID
+      Entry: 1
+      Data: ANG
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Speed
+      Entry: 7
+      Data: 20|OperatorAdd`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 21|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 0.6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 22|OperatorMul`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 23|TreeIndexValue, Assembly-CSharp
+    - Name: Level
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 24|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 1.8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Lifetime
+      Entry: 7
+      Data: 25|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: LoopCount
+      Entry: 3
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: LoopCount
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 26|CooldownShotAction, Assembly-CSharp
+    - Name: Time
+      Entry: 7
+      Data: 27|ConstValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Loop: 1
+--- !u!114 &114614009622002586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698180942375408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fcc3874ee24078459af26000b917aeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  NameID: KanataSpell0
+  MaxHP: 256
+  ActionPattern: {fileID: 114221803434027550}
+--- !u!114 &114706160585316306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790202520529144}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c412b19ff9d9b4f4b9c1e96be69ee722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Actions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[ShotAction, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Loop: 1
+--- !u!114 &114760644769694646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316685939343904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ac22296a8ad614d94225dc808cb498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Spells:
+  - {fileID: 114331188499860838}
+  - {fileID: 114614009622002586}
+--- !u!114 &114880313695040882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456193306398134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c412b19ff9d9b4f4b9c1e96be69ee722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 114087155177070896, guid: abbdb5ffa2ba6a344a5483ab85ea924b, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Actions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[ShotAction, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|SetValueShotAction, Assembly-CSharp
+    - Name: ValueID
+      Entry: 1
+      Data: ST_ANG
+    - Name: Value
+      Entry: 7
+      Data: 2|RandomValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Min
+      Entry: 7
+      Data: 3|ConstValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 60
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Max
+      Entry: 7
+      Data: 4|ConstValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 120
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|GenerateShotAction, Assembly-CSharp
+    - Name: ShotData
+      Entry: 7
+      Data: 6|LoopShotMiko, Assembly-CSharp
+    - Name: MikoTemplate
+      Entry: 7
+      Data: 7|LoopShotMiko, Assembly-CSharp
+    - Name: MikoTemplate
+      Entry: 7
+      Data: 8|SingleShotMiko, Assembly-CSharp
+    - Name: Plans
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[ShotLifeplan, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 10|SetValueShotLifeplan, Assembly-CSharp
+    - Name: ID
+      Entry: 1
+      Data: ANG
+    - Name: Value
+      Entry: 7
+      Data: 11|OperatorAdd`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 12|SavedCommonValue, Assembly-CSharp
+    - Name: ID
+      Entry: 1
+      Data: ST_ANG
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 13|OperatorMul`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 14|TreeIndexValue, Assembly-CSharp
+    - Name: Level
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 15|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 16|BornShotLifeplan, Assembly-CSharp
+    - Name: SpawnTarget
+      Entry: 10
+      Data: 0
+    - Name: Position
+      Entry: 7
+      Data: 17|SelfPositionReference, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 18|LinearMoveShotLifeplan, Assembly-CSharp
+    - Name: Angle
+      Entry: 7
+      Data: 19|SavedValue, Assembly-CSharp
+    - Name: ID
+      Entry: 1
+      Data: ANG
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Speed
+      Entry: 7
+      Data: 20|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Lifetime
+      Entry: 7
+      Data: 21|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 22|WaitingShotLifeplan, Assembly-CSharp
+    - Name: WaitTime
+      Entry: 7
+      Data: 23|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 24|LinearMoveShotLifeplan, Assembly-CSharp
+    - Name: Angle
+      Entry: 7
+      Data: 25|OperatorAdd`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Left
+      Entry: 7
+      Data: 26|SavedValue, Assembly-CSharp
+    - Name: ID
+      Entry: 1
+      Data: ANG
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Right
+      Entry: 7
+      Data: 27|RandomValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Min
+      Entry: 7
+      Data: 28|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: -8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Max
+      Entry: 7
+      Data: 29|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Speed
+      Entry: 7
+      Data: 30|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Lifetime
+      Entry: 7
+      Data: 31|ConstValue`1[[ShotMiko, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: LoopCount
+      Entry: 3
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: LoopCount
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 32|CooldownShotAction, Assembly-CSharp
+    - Name: Time
+      Entry: 7
+      Data: 33|RandomValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Min
+      Entry: 7
+      Data: 34|ConstValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 0.25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Max
+      Entry: 7
+      Data: 35|ConstValue`1[[ShotRule, Assembly-CSharp]], Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Loop: 1
+--- !u!114 &114904936959066546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489897668631164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a50c47ac51c5124ebdbd74b05c79aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Rules:
+  - {fileID: 114880313695040882}
 --- !u!212 &212364034002621462
 SpriteRenderer:
   m_ObjectHideFlags: 1

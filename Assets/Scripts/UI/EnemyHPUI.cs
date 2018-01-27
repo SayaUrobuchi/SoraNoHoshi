@@ -7,10 +7,12 @@ using Sirenix.OdinInspector;
 public class EnemyHPUI : SerializedMonoBehaviour
 {
     public const int HEIGHT = 384;
+    public const float SPEED = .8f;
 
     public Image Front;
 
     private EnemyBattler mainEnemy;
+    private float displayAmount = 0f;
 
 	// Use this for initialization
 	void Start () {
@@ -25,7 +27,16 @@ public class EnemyHPUI : SerializedMonoBehaviour
         }
         if (mainEnemy != null)
         {
-            Front.GetComponent<RectTransform>().sizeDelta = new Vector2(0, HEIGHT * mainEnemy.HPRate);
+            float realRate = mainEnemy.HPRate;
+            if (displayAmount < realRate)
+            {
+                displayAmount = Mathf.Min(displayAmount + StageMaid.DeltaTime * SPEED, realRate);
+            }
+            else if (displayAmount > realRate)
+            {
+                displayAmount = Mathf.Max(displayAmount - StageMaid.DeltaTime * SPEED, realRate);
+            }
+            Front.GetComponent<RectTransform>().sizeDelta = new Vector2(0, HEIGHT * displayAmount);
         }
 	}
 }

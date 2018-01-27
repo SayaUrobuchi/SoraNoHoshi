@@ -5,8 +5,11 @@ using UnityEngine;
 public class EnemyBattler : BattlerBase
 {
     public int FakeMaxHP = 800;
+    public EnemySpellMaid SpellMaid;
 
     private int currentHP = 1;
+    private int currentSpellIndex = 0;
+    private ShotMaid currentShotMaid;
 
     public int MaxHP
     {
@@ -36,16 +39,41 @@ public class EnemyBattler : BattlerBase
     {
         base.OnHit(shot);
         currentHP--;
-        if (currentHP == 0)
+        if (currentHP <= 0)
         {
-            currentHP = FakeMaxHP;
+            UseNextSpell();
         }
+    }
+
+    public void UseNextSpell()
+    {
+        UseSpell((currentSpellIndex+1) % SpellMaid.Spells.Count);
+    }
+
+    public void UseSpell(int idx)
+    {
+        currentSpellIndex = idx;
+        UseSpell(SpellMaid.Spells[idx]);
+    }
+
+    private void UseSpell(EnemySpell spell)
+    {
+        if (currentShotMaid != null)
+        {
+            currentShotMaid.Stop();
+            StageMaid.Summon.ClearAllShot();
+        }
+        FakeMaxHP = spell.MaxHP;
+        currentHP = MaxHP;
+        currentShotMaid = spell.ActionPattern;
+        currentShotMaid.Owner = this;
+        currentShotMaid.Trigger();
     }
 
     // Use this for initialization
     void Start ()
     {
-		currentHP = FakeMaxHP;
+        UseSpell(0);
 	}
 	
 	// Update is called once per frame
